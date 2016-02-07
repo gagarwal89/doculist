@@ -83,8 +83,8 @@ a:hover {
 	box-shadow: 0px 0.5px 2px #cecece;
 }
 .navbar-default .navbar-brand {
-    padding: 7px;
-    color: #3eb0f7
+	font-size: 40px;
+    color: #3eb0f7;
 }
 .navbar-default .navbar-nav > li > a {
     color: #777;
