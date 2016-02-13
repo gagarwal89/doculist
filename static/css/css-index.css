@@ -51,16 +51,6 @@ a:hover {
 .highlight {
 	color: #3eb0f7;
 }
-#preloader {
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	overflow: visible;
-	background: #fff url(../images/loading.gif) no-repeat center center;
-}
 .fullscreen {
     width:100%;
     min-height:100%;

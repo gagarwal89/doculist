@@ -6,6 +6,9 @@ from flask import (
     redirect
 )
 
+from models import NewUser
+from database import create_user
+
 app = Flask(__name__, template_folder='static', static_folder='static')
 
 
@@ -18,11 +21,20 @@ def serve_main_page():
 @app.route('/signup', methods=['POST'])
 def signup():
     form = request.form
-    name = form['name']
+    import pdb
+    pdb.set_trace()
+    new_user = NewUser(form)
+    create_user(new_user)
+    return redirect('/')
+
+
+@app.route('/login', methods=['POST'])
+def login():
+    form = request.form
     email = form['email']
     password = form['password']
 
-    return redirect('/')
+    return redirect('/p')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
