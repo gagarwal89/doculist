@@ -21,8 +21,6 @@ def serve_main_page():
 @app.route('/signup', methods=['POST'])
 def signup():
     form = request.form
-    import pdb
-    pdb.set_trace()
     new_user = NewUser(form)
     create_user(new_user)
     return redirect('/')
