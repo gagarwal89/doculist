@@ -16,7 +16,7 @@ body {
 	margin:0;
 	font-size:16px;
 	line-height: 28px;
-	color: #777; 
+	color: #777;
 	background: #fff;
 	overflow-x:hidden;
 	position: relative;
@@ -30,8 +30,8 @@ h6 { font-size: 1em; line-height:1.2em; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none
-}	 
-p { 
+}
+p {
 	padding:0 0 1em;
 	margin:0;
 }
@@ -41,7 +41,7 @@ a {
 	font-weight: bold;
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
-} 
+}
 a:hover {
 	text-decoration: none;
 	color: #1f2222;
@@ -50,16 +50,6 @@ a:hover {
 }
 .highlight {
 	color: #3eb0f7;
-}
-#preloader { 
-	position: fixed; 
-	left: 0; 
-	top: 0; 
-	z-index: 999; 
-	width: 100%; 
-	height: 100%; 
-	overflow: visible; 
-	background: #fff url(../images/loading.gif) no-repeat center center;
 }
 .fullscreen {
     width:100%;
@@ -93,21 +83,21 @@ a:hover {
 .navbar-default .navbar-nav > li > a:focus {
     color: #3eb0f7;
 }
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background: transparent;
     color: #3eb0f7;
 }
 .site-name img{
-	width: 150px; 
+	width: 150px;
 	height: 37px
 }
 .logo {
 	margin: 100px 0 40px 0;
 }
 .logo img{
-	width: 150px; 
+	width: 150px;
 	height: 37px
 }
 .landing h1{
@@ -124,7 +114,7 @@ a:hover {
 	margin-bottom: 20px;
 }
 .landing-text p {
-	font-size: 17px !important; 
+	font-size: 17px !important;
 }
 .action-glass {
 	font-size: 17px;
@@ -185,7 +175,7 @@ a:hover {
 	background: rgba(255,255,255,0.2);
 	border-radius: 4px;
 	padding-left: 20px;
-	padding-right: 20px;	
+	padding-right: 20px;
 }
 .signup-header h3{
 	padding: 20px 0 10px;
@@ -224,14 +214,14 @@ a:hover {
 .signup-registration {
 	margin: 20px 0 50px;
 }
-.form-registration { 
-	background: rgba(255,255,255,0.2); 
-	padding: 20px 20px; 
-	margin-top: 50px; 
+.form-registration {
+	background: rgba(255,255,255,0.2);
+	padding: 20px 20px;
+	margin-top: 50px;
 }
-.form-registration .form-group { 
+.form-registration .form-group {
 	margin-bottom: 45px;
-	margin-top: 20px; 
+	margin-top: 20px;
 }
 .form-registration input {
 	margin-bottom: 20px;
@@ -422,14 +412,14 @@ a:hover {
 .subscribe-form .form-control::-webkit-input-placeholder {
 	color: #333;
 }
-.subscribe-form .form-control:-moz-placeholder { 
-	color: #333;  
+.subscribe-form .form-control:-moz-placeholder {
+	color: #333;
 }
-.subscribe-form .form-control::-moz-placeholder { 
-	color: #333;  
+.subscribe-form .form-control::-moz-placeholder {
+	color: #333;
 }
-.subscribe-form .form-control:-ms-input-placeholder {  
-	color: #333;  
+.subscribe-form .form-control:-ms-input-placeholder {
+	color: #333;
 }
 #package {
 	padding-top: 100px;
@@ -488,7 +478,7 @@ a:hover {
 	background: #3eb0f7;
 	transition: all 0.4s;
 	color: white;
-	border-radius: 4px;	
+	border-radius: 4px;
 }
 .btn-price:hover {
 	background: #1f96e0;
@@ -568,7 +558,7 @@ a:hover {
 	width: 225px;
 	position: relative;
 	border-radius: 4px;
-} 
+}
 .iphone {
 	background: #3eb0f7;
 	transition: all 0.3s ease;
@@ -629,16 +619,16 @@ a:hover {
 	color: white;
 }
 .ul-address li {
-	padding-right: 20px; 
-	margin-bottom: 8px; 
+	padding-right: 20px;
+	margin-bottom: 8px;
 	list-style: none;
 	color: white;
 }
 .ul-address i {
 	margin-left: 15px;
-	position: absolute; 
+	position: absolute;
 	left: 0;
-	color: #3eb0f7; 
+	color: #3eb0f7;
 	font-size: 25px;
 	line-height: 30px;
  }
@@ -716,11 +706,11 @@ a:hover {
 	background: #3eb0f7;
 }
 .scrollToTop{
-	width: 40px; 
+	width: 40px;
 	height: 40px;
 	padding: 5px;
 	font-size: 30px;
-	text-align: center; 
+	text-align: center;
 	background: rgba(0, 0, 0, 0.2);
 	color: white;
 	position: fixed;
@@ -736,9 +726,9 @@ a:hover {
 	overflow-x: hidden;
 }
 /* iPads (portrait) ----------- */
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
 and (orientation : portrait) {
 	.more {
 		margin-bottom: 50px;
@@ -782,20 +772,20 @@ and (orientation : portrait) {
 	#client img {
 		margin: 10px 0 10px;
 		max-height: 40px;
-	}	
+	}
 }
 
 /* iPads (landscape) ----------- */
-@media only screen 
-and (min-width : 768px) 
-and (max-width : 1024px) 
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
 and (orientation : landscape) {
 	.logo {
 		margin: 100px 0 30px 0;
 	}
 	.landing h1{
 		margin: 60px 0 60px 0;
-	}	
+	}
 	.landing-text {
 		margin: 60px 0 40px 0;
 	}
@@ -810,7 +800,7 @@ and (orientation : landscape) {
 	}
 	.feature-img {
 		margin-top: 30px;
-	}	
+	}
 	.feat-list {
 		margin-top: 10px;
 	}
@@ -822,7 +812,7 @@ and (orientation : landscape) {
 	}
 	#client img {
 		max-height: 45px;
-	}	
+	}
 }
 
 /* smart-phone ----------- */
@@ -857,11 +847,11 @@ and (orientation : landscape) {
 	}
 	#client img {
 		margin: 10px 0 10px;
-	}	
+	}
 	.contact-left {
 		margin-bottom: 50px;
 	}
-}	
+}
 /* iPhone 6Plus (landscape) ----------- */
 @media (max-width: 736px) {
 
@@ -906,7 +896,7 @@ and (orientation : landscape) {
 		margin: 20px 0 10px 0;
 	}
 	.landing-text p {
-		font-size: 16px !important; 
+		font-size: 16px !important;
 	}
 	#intro {
 		padding-top: 50px;
@@ -922,7 +912,7 @@ and (orientation : landscape) {
 	}
 	#screenshot {
 		padding-top: 70px;
-	}	
+	}
 	.screenshots {
 		padding-top: 30px;
 		padding-bottom: 70px;
@@ -938,8 +928,8 @@ and (orientation : landscape) {
 		margin: 50px 0 20px;
 	}
 	.download-text p {
-		line-height: 1.5;	
-	}	
+		line-height: 1.5;
+	}
 	.download-store {
 		padding: 10px 0 70px;
 	}
@@ -968,7 +958,7 @@ and (orientation : landscape) {
 	}
 	.appstorebutton {
 		margin-bottom: 15px;
-	} 
+	}
 	.download-store li {
 		margin-left: 0;
 	}
