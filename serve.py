@@ -22,7 +22,8 @@ def serve_main_page():
 def signup():
     form = request.form
     new_user = NewUser(form)
-    create_user(new_user)
+    uid = create_user(new_user)
+
     return redirect('/')
 
 
