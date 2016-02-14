@@ -17,17 +17,21 @@ conn = psycopg2.connect(
 
 def create_user(user):
     cursor = conn.cursor()
+    user_uuid = str(uuid.uuid4())
     query = "INSERT INTO users (name, email, password, uuid) VALUES (%s, %s, %s, %s);"  # noqa
-    data = (user.name, user.email, user.password, str(uuid.uuid4()))
+    data = (user.name, user.email, user.password, user_uuid)
 
     cursor.execute(query, data)
     conn.commit()
+    return user_uuid
 
 
 def get_user(user):
     cursor = conn.cursor()
-    query = "INSERT INTO users (name, email, password) VALUES (%s, %s, %s);"
-    data = (user.name, user.email, user.password)
+    query = "SELECT uuid FROM users WHERE email=%s and password=%s"
+    data = (user.email, user.password)
 
     cursor.execute(query, data)
-    conn.commit()
+    rows = cursor.fetchall()
+
+    return rows
