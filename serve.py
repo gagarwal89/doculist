@@ -8,7 +8,7 @@ from flask import (
 )
 
 from models import NewUser, LoginUser
-from database import create_user, get_user
+from database import create_user, get_user, get_scenarios_for_user
 
 app = Flask(__name__, template_folder='static', static_folder='static')
 
@@ -49,8 +49,11 @@ def login():
 @app.route('/home')
 def home():
     uuid = session['uuid']
-    print uuid
-    return render_template('profile.html')
+    import pdb
+    pdb.set_trace()
+
+    scenarios = get_scenarios_for_user(uuid)
+    return render_template('profile.html', scenarios=scenarios)
 
 if __name__ == "__main__":
     app.config['SESSION_TYPE'] = 'redis'

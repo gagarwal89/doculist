@@ -35,3 +35,14 @@ def get_user(user):
     rows = cursor.fetchall()
 
     return rows
+
+
+def get_scenarios_for_user(uuid):
+    cursor = conn.cursor()
+    query = "SELECT * FROM requests WHERE userid=%s"
+    data = uuid
+
+    cursor.execute(query, data)
+    rows = cursor.fetchall()
+
+    return rows
